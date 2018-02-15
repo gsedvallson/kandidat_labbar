@@ -16,6 +16,7 @@ public class BoxFrame extends javax.swing.JFrame {
      */
     public BoxFrame() {
         initComponents();
+        jTextField1.requestFocus();
     }
 
     /**
@@ -95,10 +96,14 @@ public class BoxFrame extends javax.swing.JFrame {
 
 
 
+     
+    
+  
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String text = jTextField1.getText();
         jTextArea1.append(text+"\n");
         jTextField1.setText("");
+        jTextField1.requestFocus();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
